@@ -26,31 +26,29 @@ class IconWrrapper extends HookWidget {
     final ScreenUiHelper uiHelpers = ScreenUiHelper.fromContext(context);
     final isHovered = useState(false);
 
-    return TranslateOnHover(
-      child: MouseRegion(
-          onEnter: (event) => isHovered.value = true,
-          onExit: (event) => isHovered.value = false,
-          child: NeumorphicButton(
-            margin: margin,
-            onPressed: onTap,
-            padding: padding ?? const EdgeInsets.all(12),
-            style: NeumorphicStyle(
-                border: NeumorphicBorder(
-                  isEnabled: true,
-                  color: color ?? uiHelpers.surfaceColor,
-                  width: 2,
-                ),
-                intensity: isHovered.value ? 0.8 : 1,
-                boxShape: boxShape ??
-                    NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
-                color: color ?? uiHelpers.backgroundColor,
-                lightSource: LightSource.top,
-                depth:
-                    isHovered.value ? NeumorphicTheme.embossDepth(context) : 4,
-                surfaceIntensity: isHovered.value ? 0.25 : 0.5,
-                shape: NeumorphicShape.flat),
-            child: child,
-          )),
-    );
+    return MouseRegion(
+        onEnter: (event) => isHovered.value = true,
+        onExit: (event) => isHovered.value = false,
+        child: NeumorphicButton(
+          margin: margin,
+          onPressed: onTap,
+          padding: padding ?? const EdgeInsets.all(12),
+          style: NeumorphicStyle(
+              border: NeumorphicBorder(
+                isEnabled: true,
+                color: color ?? uiHelpers.surfaceColor,
+                width: 2,
+              ),
+              intensity: isHovered.value ? 0.8 : 1,
+              boxShape: boxShape ??
+                  NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
+              color: color ?? uiHelpers.backgroundColor,
+              lightSource: LightSource.top,
+              depth:
+                  isHovered.value ? NeumorphicTheme.embossDepth(context) : 4,
+              surfaceIntensity: isHovered.value ? 0.25 : 0.5,
+              shape: NeumorphicShape.flat),
+          child: child,
+        ));
   }
 }
