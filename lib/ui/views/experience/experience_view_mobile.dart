@@ -86,7 +86,7 @@ class ExperienceMobileView extends StatelessWidget {
                               uiHelpers.verticalSpaceLow,
                               ListView.builder(
                                 physics: NeverScrollableScrollPhysics(),
-                                primary: false,
+                                primary: true,
                                 shrinkWrap: true,
                                 itemBuilder: (_, index) {
                                   return Padding(
@@ -100,8 +100,7 @@ class ExperienceMobileView extends StatelessWidget {
                                         SizedBox(width: 5),
                                         Expanded(
                                           child: Text(
-                                            PersonalDetails.experienceList[i]
-                                                .description[index],
+                                            PersonalDetails.experienceList[i].description[index],
                                             style: uiHelpers.body,
                                           ),
                                         )

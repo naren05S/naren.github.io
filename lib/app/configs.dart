@@ -67,7 +67,7 @@ mixin PersonalDetails {
     Technologies(icon: TechnologiesIcon.javaIcon, name: "Java"),
     Technologies(icon: TechnologiesIcon.pythonIcon, name: "Python")
   ];
-  static const String githubUserName = "shashiben";
+  static const String githubUserName = "naren05S";
   static const String githubDataUrl =
       "https://api.github.com/users/$githubUserName/repos";
   static List<Project> projectsList = [
@@ -191,6 +191,19 @@ mixin PersonalDetails {
         tools: [
           "Flutter",
           "Firebase",
+        ]),
+    ExperienceTimeline(
+        title: "Freelancing",
+        position: "Mobile App Developer",
+        timePeriod: "Aug 2020 - Present",
+        description: [
+          "Worked collaboratively with designer to bring mobile app ",
+          "Created frontend application as per User requirement",
+          "Knowledge and understanding of Firebase",
+        ],
+        tools: [
+          "Flutter",
+          "Figma"
         ]),
     ExperienceTimeline(
         title: "Internship",

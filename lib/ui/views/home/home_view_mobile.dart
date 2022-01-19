@@ -70,6 +70,7 @@ class HomeMobileView extends StatelessWidget {
                   itemCount: PersonalDetails.skillDisplayList.length,
                   itemBuilder: (_, index, realIndex) {
                     return Container(
+                      margin: EdgeInsets.symmetric(horizontal: 10),
                       width: uiHelpers.width,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 15, vertical: 20),

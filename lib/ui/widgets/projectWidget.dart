@@ -24,101 +24,89 @@ class ProjectWidget extends StatelessWidget {
       xDistance: 0,
       yDistance: 0000000,
       delay: index * 0.2 + 1,
-      child: TranslateOnHover(
-        child: Container(
-          height: 250,
-          margin: EdgeInsets.only(
-              bottom: 15, right: uiHelpers.width > 768 ? 15 : 0),
-          child: Neumorphic(
-            style: NeumorphicStyle(
-                shape: NeumorphicShape.convex,
-                shadowLightColor: uiHelpers.backgroundColor,
-                depth: 5,
-                intensity: 0.6,
-                color: uiHelpers.backgroundColor,
-                surfaceIntensity: 0.3,
-                boxShape:
-                    NeumorphicBoxShape.roundRect(BorderRadius.circular(12))),
-            child: Container(
-              width: uiHelpers.width,
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Icon(
-                        ProjectIcons.folderIcon,
-                        color: uiHelpers.primaryColor,
-                        size: 30,
-                      ),
-                      Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          project.websiteLink == null
-                              ? SizedBox()
-                              : IconButton(
-                                  icon: Icon(
-                                    ProjectIcons.websiteIcon,
-                                    color: uiHelpers.primaryColor,
-                                  ),
-                                  onPressed: () => _urlLauncherService
-                                      .launchUrl(project.websiteLink),
+      child: Container(
+        height: 250,
+        margin: EdgeInsets.only(
+            bottom: 15, right: uiHelpers.width > 768 ? 15 : 0),
+        child: Neumorphic(
+          style: NeumorphicStyle(
+              shape: NeumorphicShape.convex,
+              shadowLightColor: uiHelpers.backgroundColor,
+              depth: 5,
+              intensity: 0.6,
+              color: uiHelpers.backgroundColor,
+              surfaceIntensity: 0.3,
+              boxShape:
+                  NeumorphicBoxShape.roundRect(BorderRadius.circular(12))),
+          child: Container(
+            width: uiHelpers.width,
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Icon(
+                      ProjectIcons.folderIcon,
+                      color: uiHelpers.primaryColor,
+                      size: 30,
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        project.websiteLink == null
+                            ? SizedBox()
+                            : IconButton(
+                                icon: Icon(
+                                  ProjectIcons.websiteIcon,
+                                  color: uiHelpers.primaryColor,
                                 ),
-                          project.githubLink == null
-                              ? SizedBox()
-                              : IconButton(
-                                  icon: Icon(
-                                    ProjectIcons.githubIcon,
-                                    color: uiHelpers.primaryColor,
-                                  ),
-                                  onPressed: () => _urlLauncherService
-                                      .launchUrl(project.githubLink),
+                                onPressed: () => _urlLauncherService
+                                    .launchUrl(project.websiteLink),
+                              ),
+                        project.githubLink == null
+                            ? SizedBox()
+                            : IconButton(
+                                icon: Icon(
+                                  ProjectIcons.githubIcon,
+                                  color: uiHelpers.primaryColor,
                                 ),
-                          project.playstoreLink == null
-                              ? SizedBox()
-                              : IconButton(
-                                  icon: Icon(
-                                    ProjectIcons.playstoreIcon,
-                                    color: uiHelpers.primaryColor,
-                                  ),
-                                  onPressed: () => _urlLauncherService
-                                      .launchUrl(project.playstoreLink),
-                                ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  uiHelpers.verticalSpaceMedium,
-                  Text(
-                    project.title,
-                    style: uiHelpers.title,
-                  ),
-                  uiHelpers.verticalSpaceLow,
-                  Text(
-                    project.description,
-                    style: uiHelpers.body.copyWith(fontWeight: FontWeight.w300),
-                  ),
-                  Spacer(),
-                  Wrap(
-                    children: [
-                      for (int i = 0; i < project.tools.length; i++)
-                        Padding(
-                          child: Text(
-                            project.tools[i],
-                            style: uiHelpers.body.copyWith(
-                                fontWeight: FontWeight.w400,
-                                color: uiHelpers.textSecondaryColor),
-                          ),
-                          padding: const EdgeInsets.symmetric(vertical: 4)
-                              .copyWith(right: 16),
+                                onPressed: () => _urlLauncherService
+                                    .launchUrl(project.githubLink),
+                              ),
+                      ],
+                    ),
+                  ],
+                ),
+                uiHelpers.verticalSpaceMedium,
+                Text(
+                  project.title,
+                  style: uiHelpers.title,
+                ),
+                uiHelpers.verticalSpaceLow,
+                Text(
+                  project.description,
+                  style: uiHelpers.body.copyWith(fontWeight: FontWeight.w300),
+                ),
+                Spacer(),
+                Wrap(
+                  children: [
+                    for (int i = 0; i < project.tools.length; i++)
+                      Padding(
+                        child: Text(
+                          project.tools[i],
+                          style: uiHelpers.body.copyWith(
+                              fontWeight: FontWeight.w400,
+                              color: uiHelpers.textSecondaryColor),
                         ),
-                    ],
-                  )
-                ],
-              ),
+                        padding: const EdgeInsets.symmetric(vertical: 4)
+                            .copyWith(right: 16),
+                      ),
+                  ],
+                )
+              ],
             ),
           ),
         ),
