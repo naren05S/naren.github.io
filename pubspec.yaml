@@ -33,10 +33,7 @@ dependencies:
   oktoast: ^3.0.0
   animations:
   carousel_slider:
-  flutter_neumorphic:
-      git:
-        url: git://github.com/4uzhoy/Flutter-Neumorphic.git
-        ref: fix/#241
+  flutter_neumorphic: ^3.0.4+1
 
 dev_dependencies:
   flutter_test:
