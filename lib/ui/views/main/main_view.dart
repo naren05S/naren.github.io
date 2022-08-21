@@ -73,6 +73,9 @@ class MainView extends HookWidget {
                     ),
               body: ScreenTypeLayout(
                 desktop: CollapsibleSidebar(
+                    // backgroundColor:NeumorphicTheme.of(context).isUsingDark
+                    // ? uiHelpers.primaryColor
+                    // : Colors.lightBlue,
                     fitItemsToBottom: false,
                     selectedIconColor: NeumorphicTheme.of(context).isUsingDark
                         ? uiHelpers.primaryColor

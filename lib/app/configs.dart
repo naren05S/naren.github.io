@@ -73,30 +73,28 @@ mixin PersonalDetails {
   static List<Project> projectsList = [
     Project(
         id: "0",
-        type: ["Website"],
-        title: "Hostel Management",
-        githubLink: "https://github.com/shashiben/Hostel-Management",
-        websiteLink: "https://hostel-app-test.herokuapp.com/login",
+        type: ["Application"],
+        title: "Sneaker Hub",
+        githubLink: "https://github.com/naren05S/SneakerHead",
         description:
-            "Created a hostel management web app to track students where they are, and download data of attendance for each day",
-        tools: ["Redux", "Node Js", "Express Js", "Mongo DB", "React Js"]),
+            "Created a flutter app for showcase sneaker collection ",
+        tools: ["Flutter"]),
     Project(
         id: "1",
-        type: ["Website"],
-        title: "E Commerce",
-        githubLink: "https://github.com/shashiben/MERN-ECommerce",
-        websiteLink: "https://nsd-solutions.herokuapp.com/",
+        type: ["Application"],
+        title: "TO DO APP",
+        githubLink: "https://github.com/naren05S/To_Do_App",
         description:
-            "An ECommerce application similar to amazon or flipkart where users can buy products,contains admin panel",
-        tools: ["Redux", "Node Js", "Express Js", "Mongo DB", "React Js"]),
+            "A basic todo app which is build in flutter.",
+        tools:  ["Flutter"]),
     Project(
         id: "2",
-        type: ["Application"],
-        title: "Flutter Custom Graph",
-        githubLink: "https://github.com/shashiben/flutter_custom_graph",
+        type: ["Game"],
+        title: "Color Game Using Tkinter",
+        githubLink: "https://github.com/naren05S/colorgame-using-tkinter",
         description:
-            "Created a flutter package for building customized and aesthetic graphs.Built with the help of custom graphs.",
-        tools: ["Flutter"]),
+            "Build game using python library tkinter which is easily for  develop GUI.",
+        tools: ["Python"]),
     Project(
         id: "3",
         type: ["Application"],

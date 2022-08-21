@@ -19,6 +19,10 @@ mixin lightColor {
   static Color primaryColor = Color(0xFF31344B);
   static Color backgroundColor = Color(0xFFe6e7ee);
   static Color surfaceColor = Color(0xFFe6e7ee);
+  static const Color cyan = Color(0xFFE0F7FA);//.fromRGBO(190, 230, 212, 1);
+  static const Color categoryEquityBackground = Color.fromRGBO(104, 177, 255, 0.2);
+  static const Color greySelected = Color.fromRGBO(243, 243, 243, 1);
+  static const Color custblack = Color.fromRGBO(42, 45, 55, 1);
 
 //** Text Colors
   static Color textPrimaryColor = Color(0xFF31344B);

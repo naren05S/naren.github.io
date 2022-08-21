@@ -16,11 +16,11 @@ class ProjectResponsiveView extends StatelessWidget {
     return Scaffold(
       backgroundColor: uiHelpers.backgroundColor,
       body: Container(
-        child: Center(child: Text("Coming Soon..",style:uiHelpers.body.copyWith(
+        child: /*Center(child: Text("Coming Soon..",style:uiHelpers.body.copyWith(
             fontWeight: FontWeight.w800,
             height: 2,
-            color: uiHelpers.textPrimaryColor),))
-        /*Center(
+            color: uiHelpers.textPrimaryColor),))*/
+        Center(
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
@@ -133,7 +133,7 @@ class ProjectResponsiveView extends StatelessWidget {
               ],
             ),
           ),
-        ),*/
+        ),
       ),
     );
   }
