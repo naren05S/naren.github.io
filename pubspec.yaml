@@ -25,6 +25,8 @@ dependencies:
   #*Services
   url_launcher: ^6.0.2
   http: ^0.13.0
+  firebase_remote_config: ^0.10.0+5
+  firebase_core: ^1.7.0
 
   #*Utilities
   collapsible_sidebar: ^2.0.0

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "299558925453",
+    "firebase_url": "https://naren-portfolio-default-rtdb.firebaseio.com",
+    "project_id": "naren-portfolio",
+    "storage_bucket": "naren-portfolio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299558925453:android:cc72e9b931803726219ec4",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299558925453-03hlgajhs58njf5tnm6d34u5bm098790.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBW5viFlB3O_nVoSS_rpxnh-f9S_kQVZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299558925453-03hlgajhs58njf5tnm6d34u5bm098790.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "299558925453-qtdp6qns9ghdree2dbkjqfdfk8dt22rk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.portfolio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
