@@ -60,7 +60,7 @@ mixin PersonalDetails {
         color: Color(0xFFFFB300),
         iconData: SkillDisplayIcons.databaseIcon)*/
   ];
-  static const String resumeLink ="https://drive.google.com/file/d/1SHPV5Xtwc1QoF5ujQieoji8cwciy5Dlz/view?usp=sharing";
+  static const String resumeLink ="https://drive.google.com/file/d/1XvYLEJVeL1IjZsmU7rTU9AkdQrfDp_p-/view?usp=sharing";
   static const String whatsappLink = "https://wa.me/9702333759";
   static const List<Technologies> techList = [
     Technologies(icon: TechnologiesIcon.reactJsIcon, name: "React JS"),
@@ -97,82 +97,23 @@ mixin PersonalDetails {
         tools: ["Python"]),
     Project(
         id: "3",
-        type: ["Application"],
-        title: "Face Mask Detection",
-        githubLink: "https://github.com/shashiben/flutter-face-mask-detection",
-        description:
-            "Mobile Application to detect whether person wears a mask or not.Built with Flutter and tensorflow lite.",
-        tools: ["Flutter", "Tflite", "CNN", "Python"]),
-    Project(
-        id: "4",
-        type: ["Website"],
-        title: "FReMP Stack",
-        githubLink: "https://github.com/shashiben/FReMP-Stack",
-        description:
-            "Created a simple application to show how to perform crud operations using flask,react and mongo db and includes how to search by name.",
-        tools: ["Flask", "React", "Mongo DB", "Python"]),
-    Project(
-        id: "5",
-        type: ["Opencv"],
-        title: "Motion Detection Using OpenCv",
-        githubLink: "https://github.com/shashiben/Motion-Detection-with-Opencv",
-        description:
-            "Detects motion of an object or a person and draws bounding box over it",
-        tools: ["Python", "OpenCv"]),
-    Project(
-        id: "6",
-        type: ["Website", "Application"],
-        title: "Alarm Managaer",
-        githubLink: "https://github.com/shashiben/Flutter-Alarm",
-        description:
-            "An application to schedule alarms on multiple devices supports for both android and ios,built using mongo db and flutter.",
-        tools: ["Flutter", "Mongo DB", "Node Js", "Express Js"]),
-    Project(
-        id: "7",
-        type: ["Application", "Website"],
-        title: "Cache With Hive",
-        githubLink: "https://github.com/shashiben/Flutter-anime",
-        description:
-            "Application which shows how to cache rest api data,so that user can view data even though he is offline.Presently supports for web, android and ios",
-        tools: ["Flutter", "Hive"]),
-    Project(
-        id: "8",
-        type: ["Application"],
-        title: "College Fest App",
-        playstoreLink:
-            "https://play.google.com/store/apps/details?id=com.cse.cynosure",
-        githubLink: "https://github.com/shashiben/College-Fest-app",
-        description:
-            "Created an app for college fest where users can register for events and get live notifications regarding events and has payment gateway integration.",
-        tools: ["Java", "Firebase", "Paytm"]),
-    Project(
-        id: "9",
         type: ["Website", "Application"],
         websiteLink: "https://shashiben.github.io",
         description:
             "Created portfolio using flutter,Supports for mac os,windows,linux,web,ios,android",
-        githubLink: "https://github.com/shashiben/portfolio",
+        githubLink: "https://github.com/naren05S/portfolio",
         title: "Portfolio",
         tools: ["Flutter"]),
-    Project(
-        id: "10",
-        type: ["Backend"],
-        title: "Node Mailer",
-        githubLink: "https://github.com/shashiben/node-mailer",
-        description:
-            "Backend for sending mails.Used to add functionality of sending mail without opening any other applications",
-        tools: ["Node JS", "Email JS", "Express JS"])
   ];
   static const List<String> skillsList = [
     "Flutter",
+    "Git",
+    "Firebase",
+    "Python",
+    "Figma",
     "HTML",
     "CSS",
     "JS",
-    "Git",
-    "Firebase",
-    "C/C++",
-    "Python",
-    "Figma",
   ];
 
   static const List<ExperienceTimeline> experienceList = [
@@ -189,19 +130,8 @@ mixin PersonalDetails {
         tools: [
           "Flutter",
           "Firebase",
-        ]),
-    ExperienceTimeline(
-        title: "Freelancing",
-        position: "Mobile App Developer",
-        timePeriod: "Aug 2020 - Present",
-        description: [
-          "Worked collaboratively with designer to bring mobile app ",
-          "Created frontend application as per User requirement",
-          "Knowledge and understanding of Firebase",
-        ],
-        tools: [
-          "Flutter",
-          "Figma"
+          "GIT",
+          "Rest API"
         ]),
     ExperienceTimeline(
         title: "Internship",
@@ -218,56 +148,11 @@ mixin PersonalDetails {
           "JS",
           "Json"
         ]),
-    /*ExperienceTimeline(
-        title: "ITI Hindupur",
-        position: "Freelancer",
-        timePeriod: "Dec 2020 - Jan 2021",
-        description: [
-          "Developed UI for ITI Hindupur and developed mobile application",
-          "Designed Admin Panel to send notifications or add notes or create tests",
-          "Designed College Application to create quiz for different batches",
-          "Able to add or delete or update notes",
-          "Added Contact Support using Freshchat",
-          "Can check analysis of his previous test"
-        ],
-        tools: [
-          "Flutter",
-          "Firebase",
-          "FreshChat",
-          "Figma"
-        ]),
-    ExperienceTimeline(
-        title: "Tefso",
-        position: "Mobile App Developer",
-        timePeriod: "Aug 2020 - Sep 2021",
-        description: [
-          "Worked collaboratively with designer to bring mobile app to life",
-          "Developed UI for application similar to doubtnut",
-          "Created frontend application to check user profile and quiz",
-          "Added voice support for adding questions",
-          "Designed UI for asking doubts or to check others questions.",
-        ],
-        tools: [
-          "Flutter",
-          "Figma"
-        ]),
-    ExperienceTimeline(
-      tools: ["Firebase", "DialogFlow", "Agora", "GCP", "Node js", "Mongo"],
-      timePeriod: "May 2020 - July 2020",
-      title: "Naaniz",
-      position: "Developement Team Lead",
-      description: [
-        "Managing a team of 25 members, able to divide and assign works to them",
-        "Designed DB Schema and made the UI of the app responsive",
-        "Integrated Payment Gateway Integration (Razorpay)",
-        "Implemented Video Broadcasting feature,Chat bot,Voice Search"
-      ],
-    ),*/
   ];
   static const String email = "nshekhawat997@gmail.com";
   static List<SkillModel> featuredSkills = [
     SkillModel(name: "Mobile Application Developement", percent: 95),
-    SkillModel(name: "Web Developer", percent: 90),
+    SkillModel(name: "Web Developer", percent: 80),
     SkillModel(name: "UI/UX Designer", percent: 84),
   ];
 
