@@ -98,7 +98,7 @@ mixin PersonalDetails {
     Project(
         id: "3",
         type: ["Website", "Application"],
-        websiteLink: "https://shashiben.github.io",
+        // websiteLink: "https://shashiben.github.io",
         description:
             "Created portfolio using flutter,Supports for mac os,windows,linux,web,ios,android",
         githubLink: "https://github.com/naren05S/portfolio",
