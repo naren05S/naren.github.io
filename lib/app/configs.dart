@@ -98,11 +98,24 @@ mixin PersonalDetails {
     Project(
         id: "3",
         type: ["Website", "Application"],
-        // websiteLink: "https://shashiben.github.io",
         description:
             "Created portfolio using flutter,Supports for mac os,windows,linux,web,ios,android",
         githubLink: "https://github.com/naren05S/portfolio",
         title: "Portfolio",
+        tools: ["Flutter"]),
+    Project(
+        id: "4",
+        type: ["Application"],
+        description: "A basic application of Cryptocurrency.",
+        githubLink: "https://github.com/naren05S/CryptoCurrency_App",
+        title: "Crypto-currency App",
+        tools: ["Flutter"]),
+    Project(
+        id: "5",
+        type: ["Website","Application"],
+        description: "A basic application of for generation a url for navigation.",
+        githubLink: "https://github.com/naren05S/url_navigation_web",
+        title: "url_navigation_web",
         tools: ["Flutter"]),
   ];
   static const List<String> skillsList = [
